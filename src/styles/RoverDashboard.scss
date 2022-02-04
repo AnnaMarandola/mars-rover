@@ -1,0 +1,30 @@
+@import "../styles/variables.scss";
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 90%
+}
+.card {
+    border: .2rem solid $dark-grey;
+    opacity: 0.8;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.infosContainer {
+    background-color: $dark-grey;
+    padding: 1rem 2rem;
+    color: $pure-white;
+}
+.roverImg {
+    width: 20rem;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+.camsContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}

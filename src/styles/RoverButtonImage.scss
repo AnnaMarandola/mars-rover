@@ -1,0 +1,33 @@
+.rovers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rover-imgBtn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 18rem;
+    background-image: url(../assets/curiosity.png);
+    // background-color: black;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.rover-imgBtn-container:nth-child(2) {
+    background-image: url(../assets/opportunity.png);
+}
+.rover-imgBtn-container:nth-child(3) {
+    background-image: url(../assets/spirit.png);
+}
+.rover-btn {
+    width: 90%;
+    height: 90%;
+    background-color: transparent;
+    color: white;
+    padding-top: 50%;
+    border: solid 1px grey;
+    border-radius: 10px;
+}

@@ -1,0 +1,27 @@
+@import "../styles/variables.scss";
+
+.galleryCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $dark-grey;
+    // padding: 1rem;
+
+    border-radius: 10px;
+}
+.camInfo {
+    width: 100%;
+    // border-top: 10px;
+    // background-color: $dark-grey;
+
+}
+.camImage {
+    width: 18rem;
+    height: 14rem;
+}
+
+.dateContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

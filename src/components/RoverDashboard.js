@@ -10,7 +10,6 @@ const RoverDashboard = ({ rover }) => {
   const [data, setData] = useState([]);
   const [camera, setCamera] = useState("fhaz");
 
-  console.log("data", data);
 
   useEffect(() => {
     const fetch = () => {
@@ -22,7 +21,6 @@ const RoverDashboard = ({ rover }) => {
         .then((data) => setData(data.photos));
     };
     fetch();
-    console.log("camera", camera);
   }, [camera, rover, setData]);
 
   const handleCamera = (e) => {
@@ -34,12 +32,12 @@ const RoverDashboard = ({ rover }) => {
       <div className="card">
         <img src={CURIOSITY} alt="rover" className="roverImg" />
         <div className="infosContainer">
-          <h3 className="cardText">name: curiosity</h3>
-          <h3 className="cardText">landing date: 2012-08-06</h3>
-          <h3 className="cardText">launch date: 2011-11-26</h3>
-          <h3 className="cardText">status: active</h3>
+          <p className="cardText">name: curiosity</p>
+          <p className="cardText">landing date: 2012-08-06</p>
+          <p className="cardText">launch date: 2011-11-26</p>
+          <p className="cardText">status: <span>active</span></p>
           <div className="camsContainer">
-            <h3>cameras:</h3>
+            <p>cameras:</p>
             <CameraInput handleCamera={handleCamera} />
           </div>
         </div>

@@ -7,10 +7,8 @@ import "../styles/Main.scss";
 
 const Main = () => {
   const [rover, setRover] = useState("");
-  console.log("rover", rover);
 
   useEffect(() => {
-    console.log("rover", rover);
   }, [rover]);
 
   const handleRover = (e) => {
@@ -20,7 +18,6 @@ const Main = () => {
   return (
     <div className="homepage">
       <Header />
-      <p>rover: {rover}</p>
       {!rover && <RoversButtonImage handleRover={handleRover} rover={rover} />}
       {rover && <RoverDashboard rover={rover} />}
     </div>

@@ -1,9 +1,7 @@
 import "../styles/Gallery.scss";
 
 const Gallery = ({ data }) => {
-  console.log("data in gallery", data[0]);
   const camInfos = data[0];
-  console.log("camInfos", camInfos);
 
   return (
     <div className="galleryCard">
@@ -18,7 +16,7 @@ const Gallery = ({ data }) => {
         </div>
       )}
       {data.map((image, id) => (
-        <div key={id}>
+        <div key={id} className="gallery">
           <img src={image.img_src} alt="camera view" className="camImage" />
         </div>
       ))}

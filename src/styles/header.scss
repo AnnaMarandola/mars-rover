@@ -1,0 +1,16 @@
+@import "../styles/variables.scss";
+
+.header {
+    color: $pure-white;
+    font-family: "Antonio", sans-serif;
+    padding: 2rem;
+}
+.subtitle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nasa {
+    width: 30%;
+    height: auto;
+}

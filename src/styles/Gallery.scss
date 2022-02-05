@@ -3,21 +3,21 @@
 .galleryCard {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background-color: $dark-grey;
-    // padding: 1rem;
-
-    border-radius: 10px;
 }
 .camInfo {
-    width: 100%;
-    // border-top: 10px;
-    // background-color: $dark-grey;
+    padding: 0 2rem;
+    color: $pure-white;
+    font-family: "Spartan", sans-serif;
+    letter-spacing: .1rem;
+    line-height: 1.5rem;
+    font-size: 13px;
 
+    // font-weight: 600;
 }
 .camImage {
-    width: 18rem;
-    height: 14rem;
+    width: 100%;
+    height: auto;
 }
 
 .dateContainer {
